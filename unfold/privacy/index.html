@@ -12,7 +12,8 @@
 <h2>Summary</h2>
 <ul>
 <li>You don't need an account. The app signs you in anonymously with a random ID.</li>
-<li>The app shows no ads, does not track you across other companies' apps or websites, and does not use Apple's advertising identifier (IDFA).</li>
+<li>Without Unfold Pro, the app shows a short video ad (Google AdMob) before you save a free wallpaper. Unfold Pro has no ads.</li>
+<li>Ads are personalised and use Apple's advertising identifier (IDFA) only if you allow it in Apple's tracking prompt and, where required (EEA, UK, Switzerland), in Google's consent form. Otherwise you get non-personalised ads.</li>
 <li>The app can only <em>add</em> images to your photo library. It never reads, uploads or scans your photos.</li>
 <li>We do not sell your data or share it with third parties for their own purposes.</li>
 <li>Data is sent over encrypted connections (HTTPS/TLS).</li>
@@ -22,9 +23,10 @@
 <table>
 <tr><th>Data</th><th>What it is</th><th>Why</th></tr>
 <tr><td>Device or other IDs</td><td>A random anonymous user ID (Firebase Authentication) and a Firebase installation ID.</td><td>To keep your Unfold Pro status linked to your installation, and to count usage.</td></tr>
-<tr><td>App interactions</td><td>Events such as wallpapers opened, previewed, saved, shared or added to Saved, paywall views, app version, language and device model.</td><td>Analytics, to understand which wallpapers people like and improve the app.</td></tr>
+<tr><td>App interactions</td><td>Events such as wallpapers opened, previewed, saved or added to Saved, ads watched, screenshots taken, paywall views, app version, language and device model.</td><td>Analytics, to understand which wallpapers people like and improve the app.</td></tr>
 <tr><td>Approximate location</td><td>Coarse location (country or region) derived from your IP address by Google Analytics for Firebase. We do not collect precise location.</td><td>Analytics.</td></tr>
 <tr><td>Crash logs and diagnostics</td><td>Crash reports, stack traces, device model, OS version and performance information (Firebase Crashlytics).</td><td>To find and fix bugs.</td></tr>
+<tr><td>Advertising data</td><td>If you are not an Unfold Pro member: the advertising identifier (IDFA, only with your permission), device information, approximate location derived from your IP address, and how you interact with ads, collected by Google AdMob.</td><td>To show, limit, measure and, with your consent, personalise ads, and to prevent ad fraud.</td></tr>
 <tr><td>Purchase history</td><td>Which Unfold Pro plan you bought, when, and its status. Payment is handled entirely by Apple through the App Store; we never see your payment details.</td><td>To unlock Pro wallpapers and handle renewals, cancellations and restores.</td></tr>
 </table>
 <p>Your saved (hearted) wallpapers and settings stay on your device. Wallpaper images are downloaded from our servers, which like any web server receive your IP address to deliver them. If you contact us by email, we receive your email address and message and use them only to reply.</p>
@@ -32,10 +34,14 @@
 <h2>Photo library access</h2>
 <p>When you save a wallpaper, iOS asks for permission to add photos to your library. Unfold uses this "add only" permission to place the outer and inner display images in Photos. The app cannot see, read or upload anything already in your library. You can change this permission at any time in iOS Settings.</p>
 
+<h2>Advertising and your choices</h2>
+<p>Unfold uses Google AdMob to show rewarded video ads to people without Unfold Pro. If you are in the EEA, the UK or Switzerland, Google's consent form asks for your choices before any ad is requested; you can change them at any time in Unfold under Settings › Ad privacy choices. On iPhone, Apple's tracking prompt decides whether AdMob may use your advertising identifier; you can change this in iOS Settings › Privacy &amp; Security › Tracking. Without permission you still see ads, but they are not personalised. Learn how Google uses data in its <a href="https://policies.google.com/technologies/partner-sites">partner sites policy</a>. Unfold Pro removes all ads.</p>
+
 <h2>Service providers</h2>
 <p>We use the following providers to run the app. They process data on our behalf and under their own privacy terms:</p>
 <ul>
-<li><strong>Google Firebase</strong> (Authentication, Analytics, Crashlytics, Cloud Storage) – <a href="https://firebase.google.com/support/privacy">Firebase privacy</a></li>
+<li><strong>Google Firebase</strong> (Authentication, Firestore, Analytics, Crashlytics, Cloud Storage) – <a href="https://firebase.google.com/support/privacy">Firebase privacy</a></li>
+<li><strong>Google AdMob</strong> (ads for people without Unfold Pro) – <a href="https://policies.google.com/privacy">Google privacy policy</a></li>
 <li><strong>RevenueCat</strong> (subscription and purchase management) – <a href="https://www.revenuecat.com/privacy">RevenueCat privacy</a></li>
 <li><strong>Apple App Store</strong> (purchases and billing)</li>
 </ul>
@@ -51,7 +57,7 @@
 <p>Analytics and crash data are kept for as long as needed for the purposes above, following the retention settings of the providers (Google Analytics data is retained for up to 14 months). Purchase records are kept as long as needed to provide your purchases and meet legal requirements. You can stop all collection by deleting the app. To ask us to delete data linked to your anonymous ID, email <a href="mailto:info@appstackstudio.com">info@appstackstudio.com</a>; we will respond within 30 days.</p>
 
 <h2>Your rights</h2>
-<p>Depending on where you live (for example under the GDPR in the EU/EEA or the CCPA/CPRA in California), you may have the right to access, correct, delete, restrict or object to the processing of your personal data, and to receive a copy of it. We do not sell or share personal data for cross-context behavioural advertising. Contact us to exercise these rights. You can also lodge a complaint with your local data protection authority.</p>
+<p>Depending on where you live (for example under the GDPR in the EU/EEA or the CCPA/CPRA in California), you may have the right to access, correct, delete, restrict or object to the processing of your personal data, and to receive a copy of it. If you allow personalised ads, Google AdMob may use data for cross-context behavioural advertising; you can opt out at any time with the choices described above, and we do not otherwise sell your personal data. Contact us to exercise these rights. You can also lodge a complaint with your local data protection authority.</p>
 
 <h2>Children</h2>
 <p>Unfold is not directed at children under 13 (under 16 in the EEA). We do not knowingly collect personal information from children. If you believe a child has provided us with personal information, contact us and we will delete it.</p>
